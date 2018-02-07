@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms:componentMetadataRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ms="http://www.meta-share.org/OMTD-SHARE_XMLSchema" xsi:schemaLocation="http://www.meta-share.org/OMTD-SHARE_XMLSchema http://www.meta-share.org/OMTD-SHARE_XMLSchema/v200/OMTD-SHARE-Component.xsd">
+ <ms:metadataHeaderInfo>
+    <ms:metadataRecordIdentifier metadataIdentifierSchemeName="Handle" ms:schemeURI="">String</ms:metadataRecordIdentifier>
+    <ms:metadataCreationDate>2017-11-10</ms:metadataCreationDate>
+    <ms:metadataCreators>
+      <ms:metadataCreator>
+        <ms:separateNames>
+          <ms:surnames>
+            <ms:surname lang="en">Chaix</ms:surname>
+          </ms:surnames>
+          <ms:givenNames>
+            <ms:givenName lang="en">Estelle</ms:givenName>
+          </ms:givenNames>
+        </ms:separateNames>
+      </ms:metadataCreator>
+      <ms:metadataCreator>
+        <ms:separateNames>
+          <ms:surnames>
+            <ms:surname lang="en">Chaix</ms:surname>
+          </ms:surnames>
+          <ms:givenNames>
+            <ms:givenName lang="en">Estelle</ms:givenName>
+          </ms:givenNames>
+        </ms:separateNames>
+        <ms:sex>female</ms:sex> <!-- C'est vraiment obligatoire ça???  -->
+        <ms:communicationInfo>
+          <ms:emails>
+            <ms:email>estelle.chaix@inra.fr</ms:email>
+          </ms:emails>
+        </ms:communicationInfo>
+        <ms:affiliations>
+          <ms:affiliation>
+            <ms:position>Researcher</ms:position>  <!-- Idem, c'est vraiment obligatoire ça???  -->
+            <ms:affiliatedOrganization>
+              <ms:organizationNames>
+                <ms:organizationName lang="en">INRA Jouy-en-Josas</ms:organizationName>
+              </ms:organizationNames>
+              <ms:departmentNames>
+                <ms:departmentName lang="en">MaIAGE</ms:departmentName>
+              </ms:departmentNames>
+            </ms:affiliatedOrganization>
+          </ms:affiliation>
+        </ms:affiliations>
+      </ms:metadataCreator>
+    </ms:metadataCreators>
+  </ms:metadataHeaderInfo>
+  <ms:componentInfo>
+    <ms:resourceType>component</ms:resourceType>
+    <ms:identificationInfo>
+      <ms:resourceNames>
+        <ms:resourceName>Docker for AS-E use case</ms:resourceName> <!-- Les espaces dans le nom, c'est ok?   -->
+      </ms:resourceNames>
+      <ms:descriptions>
+        <ms:description>
+     We developed a text-mining pipeline using the AlvisNLP/ML platform, as well as a web application (semantic search engine) which makes use of the text-mining results and allows the user to search information about seed development (available at http://bibliome.jouy.inra.fr/demo/seedev/alvisir/webapi/search).
+    </ms:description>
+      </ms:descriptions>
+      <ms:resourceIdentifiers>
+        <ms:resourceIdentifier resourceIdentifierSchemeName="docker">https://hub.docker.com/r/estellechaix/as-e-docker-omtd/</ms:resourceIdentifier>
+      </ms:resourceIdentifiers>
+      <ms:public>false</ms:public> <!--True / False quelle est la différence?  -->
+    </ms:identificationInfo>
+    <ms:versionInfo>
+      <ms:version>1.0.0</ms:version>
+    </ms:versionInfo>
+       <ms:contactInfo>
+      <ms:contactPersons>
+        <ms:contactPerson>
+          <ms:separateNames>
+            <ms:surnames>
+              <ms:surname lang="en">Chaix</ms:surname>
+            </ms:surnames>
+            <ms:givenNames>
+              <ms:givenName lang="en">Estelle</ms:givenName> <!-- Encore!  -->
+            </ms:givenNames>
+          </ms:separateNames>
+          <ms:sex>female</ms:sex>
+          <ms:communicationInfo>
+            <ms:emails>
+              <ms:email>estelle.chaix@inra.fr</ms:email>
+            </ms:emails>
+          </ms:communicationInfo>
+          <ms:affiliations>
+            <ms:affiliation>
+              <ms:position>Researcher</ms:position>
+              <ms:affiliatedOrganization>
+                <ms:organizationNames>
+                  <ms:organizationName lang="en">INRA Jouy-en-Josas</ms:organizationName>
+                </ms:organizationNames>
+                <ms:departmentNames>
+                  <ms:departmentName lang="en">Bibliome/MaIAGE</ms:departmentName>
+                </ms:departmentNames>
+              </ms:affiliatedOrganization>
+            </ms:affiliation>
+          </ms:affiliations>
+        </ms:contactPerson>
+      </ms:contactPersons>
+    </ms:contactInfo>
+   <ms:componentType>informationExtractor</ms:componentType> <!--Par défaut je laisse cela -->
+    <ms:application>true</ms:application>
+    <ms:distributionInfos>
+      <ms:componentDistributionInfo>
+        <ms:componentLoc>
+	  <ms:componentDistributionForm>executableCode</ms:componentDistributionForm>
+          <ms:distributionLocation>https://hub.docker.com/r/estellechaix/as-e-docker-omtd/</ms:distributionLocation>
+        </ms:componentLoc>
+        <ms:rightsInfo>
+          <ms:licenceInfos>
+            <ms:licenceInfo>
+              <ms:licence>???</ms:licence> <!-- HEU -->
+            </ms:licenceInfo>
+          </ms:licenceInfos>
+        </ms:rightsInfo>
+        <ms:command>alvisnlp</ms:command>
+        <ms:operatingSystems>
+          <ms:operatingSystem>linux</ms:operatingSystem>
+        </ms:operatingSystems>
+      </ms:componentDistributionInfo>
+    </ms:distributionInfos>
+    <ms:inputContentResourceInfo>
+      <ms:dataFormats>
+        <ms:dataFormatInfo>
+          <ms:mimeType>text/plain</ms:mimeType>
+        </ms:dataFormatInfo>
+      </ms:dataFormats>
+      <ms:languages>
+        <ms:language>
+          <ms:languageTag>EN</ms:languageTag>
+        </ms:language>
+      </ms:languages>      
+    </ms:inputContentResourceInfo>
+    <ms:outputResourceInfo>
+      <ms:dataFormats>
+        <ms:dataFormatInfo>
+          <ms:mimeType>text/csv</ms:mimeType>
+        </ms:dataFormatInfo>
+      </ms:dataFormats>
+      <ms:languages>
+        <ms:language>
+          <ms:languageTag>EN</ms:languageTag>
+        </ms:language>
+      </ms:languages>
+      </ms:outputResourceInfo>
+    <ms:componentCreationInfo>
+      <ms:framework>AlvisNLP</ms:framework>
+      <ms:implementationLanguage>Java</ms:implementationLanguage>
+    </ms:componentCreationInfo>
+  </ms:componentInfo>
+</ms:componentMetadataRecord>
+
+
