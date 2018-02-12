@@ -15,6 +15,8 @@ To run the AS-E workflow with a local corpus :
   /as-e/plan/entities.plan
 
 
+sudo docker run -i --rm -v $PWD/:/as-e/data as-e-docker alvisnlp -verbose -alias readPubMed /as-e/data/alvisir2_corpus/pubmed_result_2.xml -alias readhtml /as-e/data/alvisir2_corpus/fulltext/html -alias readWoK /as-e/data/alvisir2_corpus/corpus2000_12012017.txt -alias exportDocument '"output/sectionsWOKPubMed.txt"' -alias output_fixed_relations '"output/relationsgroup.txt"' -alias output_fixed_entities '"output/entities.txt"' -outputDir /as-e/data/  /as-e/plan/entities.plan
+
 #-entity inputfile /path/on/the/container1/inputfilename -entity outdir /path/on/the/container2 plans/tag_WoS_abstracts.plan```
 
 
